@@ -30,7 +30,7 @@ body {
 @import "./block/header";
 @import "./block/footer";
 
-// Стили для UL \ Link
+// ! Стили для UL \ Link \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 .list {
   list-style: none;
@@ -40,7 +40,7 @@ body {
   text-decoration: none;
 }
 
-// Стили для заглавлений и параграфов
+// ! Стили для заглавлений и параграфов \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 .h-one {
   color: $white-background-color;
@@ -81,7 +81,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-// Кнопки
+// ! Кнопки \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 .main-button {
   font-family: "Roboto", sans-serif;
@@ -121,13 +121,37 @@ body {
   }
 }
 
-// Основной контент первая секция "Hero"
+// ! ICONS
+/////////////////////////////////////
+.employee-icons-box {
+  display: flex;
+  .employee-icons-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    .socials-icons-list {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+// //////////////////////////////////
+// ! Основной контент первая секция "Hero"
 
 .welcome-page {
   display: flex;
   flex-shrink: 0;
   width: 1440px;
   background-color: $dark-color;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/peopleoffice.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: $white-background-color;
   padding: 188px 0;
   text-align: center;
@@ -145,10 +169,10 @@ body {
   }
 }
 
-// Основной контент вторая секция "Our Goal"
+// *Основной контент вторая секция "Our Goal"
 
 //////////////////////////////////////////////
-/// Скрываем заглавление с помощью паттерна///
+/// *Скрываем заглавление с помощью паттерна///
 //////////////////////////////////////////////
 .visually-hidden {
   position: absolute;
@@ -163,7 +187,8 @@ body {
   border: 0;
 }
 
-//////////////////////////////////////
+//////////////////////////////////////////////
+///
 .our-goal {
   padding: 120px 0;
 
@@ -194,7 +219,7 @@ body {
   }
 }
 
-// Основной контент третья секция "What Are We Doing"
+// *Основной контент третья секция "What Are We Doing"
 .section-two {
   padding: 0 0 120px 0;
 
@@ -222,7 +247,7 @@ body {
   }
 }
 
-// Основной контент четвертая секция "Our Team"
+// *Основной контент четвертая секция "Our Team"
 
 .section-employee {
   padding: 120px 0;
@@ -260,7 +285,7 @@ body {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 32px 16px;
+          margin: 32px 16px;
 
           .h-three {
             text-align: center;
@@ -269,6 +294,7 @@ body {
 
           .goal-p {
             text-align: center;
+            margin-bottom: 8px;
           }
         }
       }
@@ -276,10 +302,39 @@ body {
   }
 }
 
-// Страница Portfolio
-// Секция первая "Our Projects"
+// * Секция КЛИЕНТЫ                                       \\\\\\\\\\\\\\\\\\\
+.section-customers {
+  padding: 120px 0;
+  .customers-div {
+    display: flex;
+    flex-direction: column;
+    .customers-ul {
+      display: flex;
+      gap: 24px;
+      .customers-list {
+        display: flex;
+        width: 168px;
+        height: 88px;
+        margin-top: 72px;
+        border-radius: 4px;
+        border: 1px solid $subtle-text-color;
+        justify-content: center;
+        align-items: center;
+        a {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+// !Страница Portfolio
+//////////////////////////////////////////// *Секция первая "Our Projects"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-// Контейнер секции + список с кнопками
+//////////////////////////////////// *Контейнер секции + список с кнопками \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 .projects-section {
   padding: 96px 0 120px 0;
 
@@ -291,7 +346,7 @@ body {
   }
 }
 
-// Список с карточками
+////////////////////////////////////////// *Список с карточками
 .projects-card {
   display: flex;
   flex-wrap: wrap;
@@ -310,5 +365,43 @@ body {
         margin-bottom: 8px;
       }
     }
+  }
+}
+
+////////////////////////////////// * ОВЕРЛЕЙ ОКНА В КАРТОЧКАХ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.projects-card-list {
+  .projects-overlay-box {
+    position: relative;
+    overflow: hidden;
+
+    .overlay {
+      display: flex;
+      width: 296px;
+      flex-direction: column;
+      flex-shrink: 0;
+      background-color: rgba(77, 90, 229, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 40px 32px;
+
+      transform: translateY(100%);
+      transition: transform 250ms ease-in-out;
+
+      .overlay-p {
+        color: $light-color;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+
+  &:hover .overlay,
+  &:focus .overlay {
+    transform: translateY(0);
   }
 }
