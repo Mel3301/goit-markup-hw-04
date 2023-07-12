@@ -756,9 +756,6 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop .modal .modal-p {
-  margin-bottom: 20px;
-}
 .backdrop .modal .close-button {
   display: -webkit-box;
   display: -ms-flexbox;
