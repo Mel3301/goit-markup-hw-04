@@ -135,10 +135,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 120px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 .footer-main .footer-container .footer-logo-p {
   display: -webkit-box;
@@ -148,6 +147,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 120px;
 }
 .footer-main .footer-container .footer-logo-p .footer-logo-main {
   display: inline-block;
@@ -170,8 +170,7 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
-
-.footer-icons-box {
+.footer-main .footer-container .footer-icons-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +179,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.footer-icons-box .socials-p {
+.footer-main .footer-container .footer-icons-box .socials-p {
   font-size: 16px;
   font-weight: 500;
   color: #f4f4fd;
@@ -188,7 +187,7 @@ body {
   line-height: 1.5;
   margin-bottom: 16px;
 }
-.footer-icons-box .footer-icons-ul {
+.footer-main .footer-container .footer-icons-box .footer-icons-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,9 +201,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
-.footer-icons-box .footer-icons-ul .footer-icons-list {
+.footer-main .footer-container .footer-icons-box .footer-icons-ul .footer-icons-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,7 +218,7 @@ body {
   height: 40px;
   border-radius: 50%;
 }
-.footer-icons-box .footer-icons-ul .footer-icons-list .footer-a {
+.footer-main .footer-container .footer-icons-box .footer-icons-ul .footer-icons-list .footer-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,7 +231,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.footer-icons-box .footer-icons-ul .footer-icons-list:hover, .footer-icons-box .footer-icons-ul .footer-icons-list:focus {
+.footer-main .footer-container .footer-icons-box .footer-icons-ul .footer-icons-list:hover, .footer-main .footer-container .footer-icons-box .footer-icons-ul .footer-icons-list:focus {
   background-color: #31d0aa;
 }
 
