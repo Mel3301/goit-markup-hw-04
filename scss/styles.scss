@@ -146,6 +146,10 @@ body {
         height: 100%;
         align-items: center;
         justify-content: center;
+
+        .icon {
+          fill: $white-background-color;
+        }
       }
 
       &:hover,
