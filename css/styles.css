@@ -182,7 +182,7 @@ body {
 .footer-main .footer-container .footer-icons-box .socials-p {
   font-size: 16px;
   font-weight: 500;
-  color: #f4f4fd;
+  color: #ffffff;
   letter-spacing: 0.02em;
   line-height: 1.5;
   margin-bottom: 16px;
@@ -213,15 +213,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #4d5ae5;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
 }
 .footer-main .footer-container .footer-icons-box .footer-icons-ul .footer-icons-list .footer-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #4d5ae5;
+  border-radius: 50%;
   width: 100%;
   height: 100%;
   -webkit-box-align: center;
