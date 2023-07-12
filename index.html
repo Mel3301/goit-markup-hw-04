@@ -71,10 +71,11 @@
         <div class="container hero">
           <h1 class="h-one">Effective Solutions for Your Business</h1>
           <!-- <input type="button" value="Order Service" /> -->
-          <button class="main-button" type="button">Order Service</button>
+          <button class="main-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
-
       <!-- section one goals -->
       <section class="our-goal">
         <div class="goal-container container">
@@ -509,6 +510,22 @@
         </div>
       </div>
     </footer>
-    <!-- </div> -->
+
+    <!-- ?Модалка -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="modal-p"></p>
+        <button class="close-button" data-modal-close>
+          <svg class="icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-closeblack"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ?Конец модалки -->
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
