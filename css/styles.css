@@ -605,23 +605,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 24px;
+  width: 100%;
 }
 .section-customers .customers-div .customers-ul .customers-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 168px;
+  width: calc((100% - 120px) / 6);
   height: 88px;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-customers .customers-div .customers-ul .customers-list .customers-a {
   display: -webkit-box;
