@@ -6,6 +6,8 @@
   justify-content: center;
   position: sticky;
   top: 0;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 
   .header-div {
     display: flex;
@@ -34,7 +36,6 @@
           }
         }
       }
-
       .header-logo-main {
         color: $primary-band-color;
         font-family: "Raleway", sans-serif;
@@ -71,5 +72,22 @@
         }
       }
     }
+  }
+}
+
+.current {
+  position: relative;
+  color: $pressed-state-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // &:hover
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: $pressed-state-color;
+    border-radius: 2px;
   }
 }
