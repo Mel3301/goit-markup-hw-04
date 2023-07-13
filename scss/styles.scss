@@ -290,7 +290,8 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 32px 16px 0 16px;
+      margin: 32px 16px;
+      padding: 32px 0;
 
       .h-three {
         text-align: center;
@@ -305,10 +306,10 @@ body {
   }
 }
 
-.employee-icons-box {
-  display: flex;
-  padding: 32px 0;
-}
+// .employee-icons-box {
+//   display: flex;
+//   padding: 32px 0;
+// }
 
 .employee-icons-ul {
   display: flex;
@@ -332,11 +333,11 @@ body {
       .icon {
         fill: $light-color;
       }
-    }
 
-    &:hover,
-    &:focus {
-      background-color: $pressed-state-color;
+      &:hover,
+      &:focus {
+        background-color: $pressed-state-color;
+      }
     }
   }
 }
