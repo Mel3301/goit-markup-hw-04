@@ -52,9 +52,9 @@ img {
   display: block;
 }
 
-/* body {
-  margin: 0; /* Remove the margin in all browsers. */
-/* } */
+body {
+  margin: 0 auto; /* Remove the margin in all browsers. */
+}
 
 /*
 Grouping content

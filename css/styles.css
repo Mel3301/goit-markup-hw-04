@@ -2,7 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
-  width: 1440px;
   margin: 0 auto;
 }
 
@@ -338,6 +337,10 @@ body {
   color: #ffffff;
   padding: 188px 0;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
 }
 .welcome-page .h-one {
   max-width: 496px;
