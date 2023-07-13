@@ -290,7 +290,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 32px 0;
+      margin: 32px 16px 0 16px;
 
       .h-three {
         text-align: center;
@@ -307,27 +307,27 @@ body {
 
 .employee-icons-box {
   display: flex;
+  padding: 32px 0;
 }
+
 .employee-icons-ul {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 24px;
+
   .socials-icons-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $primary-band-color;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+
     .socials-a {
       display: flex;
       width: 100%;
       height: 100%;
       align-items: center;
       justify-content: center;
+      background-color: $primary-band-color;
+      justify-content: center;
+      border-radius: 50%;
 
       .icon {
         fill: $light-color;

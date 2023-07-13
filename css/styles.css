@@ -520,7 +520,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px 0;
+  margin: 32px 16px 0 16px;
 }
 .employee-list .employee-card .employee-card-text .h-three {
   text-align: center;
@@ -535,38 +535,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 32px 0;
 }
 
 .employee-icons-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 24px;
 }
 .employee-icons-ul .socials-icons-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #4d5ae5;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
 }
 .employee-icons-ul .socials-icons-list .socials-a {
   display: -webkit-box;
@@ -580,6 +563,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #4d5ae5;
+  justify-content: center;
+  border-radius: 50%;
 }
 .employee-icons-ul .socials-icons-list .socials-a .icon {
   fill: #f4f4fd;
