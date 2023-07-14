@@ -426,7 +426,6 @@ body {
 
     .portfolio-card-link {
       display: block;
-      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover,
       &:focus {
@@ -451,6 +450,8 @@ body {
 ////////////////////////////////// * ОВЕРЛЕЙ ОКНА В КАРТОЧКАХ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 .projects-card-list {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   .projects-overlay-box {
     position: relative;
     overflow: hidden;
