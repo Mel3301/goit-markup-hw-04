@@ -480,6 +480,12 @@ body {
   gap: 24px;
   margin-bottom: 72px;
 }
+.projects-section .projects-list .portfolio-button {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects-section .projects-list .portfolio-button:hover, .projects-section .projects-list .portfolio-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .projects-card {
   display: flex;
@@ -490,6 +496,13 @@ body {
 }
 .projects-card .projects-card-list {
   width: calc((100% - 48px) / 3);
+}
+.projects-card .projects-card-list .portfolio-card-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects-card .projects-card-list .portfolio-card-link:hover, .projects-card .projects-card-list .portfolio-card-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .projects-card .projects-card-list .projects-card-list-content {
   padding: 32px 16px;
@@ -515,15 +528,25 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 40px 32px;
   transform: translateY(100%);
   transition: transform 250ms ease-in-out;
 }
 .projects-card-list .projects-overlay-box .overlay .overlay-p {
+  position: absolute;
+  top: 0;
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 40px 32px;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects-card-list .projects-overlay-box .overlay .overlay-p:hover, .projects-card-list .projects-overlay-box .overlay .overlay-p:focus {
+  transform: translateY(0%);
 }
 .projects-card-list:hover .overlay, .projects-card-list:focus .overlay {
   transform: translateY(0);
