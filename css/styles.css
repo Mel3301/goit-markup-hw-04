@@ -73,7 +73,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-right: 76px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .header .header-div .header-nav .header-logo-main .header-logo-part {
   color: #2e2f42;
@@ -462,6 +461,10 @@ body {
   width: 100%;
   height: 100%;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-customers .customers-div .customers-ul .customers-list .customers-a .icon {
+  fill: #8e8f99;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-customers .customers-div .customers-ul .customers-list .customers-a:hover, .section-customers .customers-div .customers-ul .customers-list .customers-a:focus {
   border-color: #404bbf;
